@@ -1,0 +1,148 @@
+<!doctypehtml>
+  <head>
+       <title> page web</title>
+  </head>
+<body>
+     <h1> Atata Douaa</h1>
+     <section>
+           <h2> A propos de moi </h2>
+           <p> - Je m'appelle Douaa Atata. J'ai 19ans. J'ai pris mon bac science maths en 2022.<br>
+               - Puis j'ai integre l'Emsi: Ecole marocaine des sciences de l'ingenieur pour me former dans le domaine de l'ingenieurie.
+           </p>
+           <img src="C:\Users\HP\Downloads\image.png" alt="Photo" width="200">
+        </section>
+
+        <section>
+             <h2> Hobbies et Objecifs </h2>
+
+            <ul> <h3> Hobbies </h3>
+                <li> Natation </li>
+                <li> Patisserie </li>
+                <li> Lecture </li>
+                <li> Peinture </li>
+            </ul>
+            <ol> <h3> Objectifs </h3>
+                <li> Developper des applications informatiques </li>
+                <li> Produire differentes pages ou sites web </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2> Tableau d'Amis </h2>
+            <table border="solid">
+                <tbody><tr>
+                    <th> Nom </th>
+                    <th> Age </th>
+                    <th> Ville </th>
+                    <th> Profil </th>
+                </tr>
+                <tr>
+                    <td> Malak </td>
+                    <td> 16 </td>
+                    <td> Casablanca </td>
+                    <td> <a href="profil_malak.html">Voir le profil</a> </td>
+                </tr>
+                <tr>
+                    <td> Adam </td>
+                    <td> 19 </td>
+                    <td> Casablanca </td>
+                    <td> <a href="profil_adam.html">Voir le profil</a> </td>
+                </tr>
+                <tr>
+                    <td> Chaimaa </td>
+                    <td> 22 </td>
+                    <td> Casablanca </td>
+                    <td> <a href="profil_chaimaa.html">Voir le profil</a> </td>
+                </tr>
+            </tbody></table>
+            </section>
+
+            <section>
+            <h2> Formulaire </h2>
+
+            <form>
+                <label for="nom">Nom :</label>
+                <br><input type="text" id="nom" name="nom" required=""> <br><br>
+                <label for="email">Email :</label>
+                <br><input type="email" id="email" name="email" required=""><br><br>
+                <label for="message">Message :</label>
+                <br><textarea id="message" name="message" rows="1" required=""></textarea><br><br>
+                <button type="submit"> Envoyer </button>
+            </form>
+            </section>
+
+
+
+            <script>
+                if (nom === "")
+                {
+                    alert("Le champ 'Nom' ne doit pas être vide.");
+                    return false;
+
+                }
+
+                if (!emailRegex.test(email))
+                {
+                    alert("Veuillez entrer un email valide.");
+                    return false;
+                }
+                alert("Formulaire soumis avec succès !");
+                return true;
+            </script>
+
+            <style>
+                body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+                     }
+
+                h1, h2 {
+                color: #800000;
+                        }
+
+                section {
+                background-color: #f4fefe;
+                padding: 20px;
+                margin: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        }
+
+                img {
+                border-radius: 50%;
+                margin-top: 10px;
+                    }
+
+                table {
+                width: 50%;
+                border-collapse: collapse;
+                margin-top: 10px;
+                       }
+
+                table, th, td {
+                border: 5px solid #614b3a;
+                            }
+
+                th, td {
+                padding: 20px;
+                text-align: left;
+                        }
+
+                button {
+                background-color: #800000;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                        }
+
+                button:hover
+                {
+                background-color: #614b3a;
+                }
+
+            </style>
+</body>
+</html>
